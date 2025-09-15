@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sameer Rehman - IT Undergraduate</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Feather Icons for outline icons -->
+    <script src="https://unpkg.com/feather-icons@4.29.0/dist/feather.min.js"></script>
+    <!-- Paper.js for enhanced animations -->
+    <script src="https://unpkg.com/paper@0.12.17/dist/paper-full.min.js"></script>
+</head>
+<body data-theme="light-steel">
+    <div class="cursor-follower" id="cursor-follower"></div>
+    
+    <!-- Paper.js Canvas for Background Animations -->
+    <canvas id="paperCanvas" class="paper-canvas"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav__container">
+            <a href="#home" class="nav__logo" id="portfolioLogo">Sam's Portfolio</a>
+            <ul class="nav__menu">
+                <li><a href="#home" class="nav__link">Home</a></li>
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero__container">
+            <div class="hero__content">
+                <h1 class="hero__title">
+                    <span class="typing-text" data-text="Sameer Rehman">Sameer Rehman</span>
+                </h1>
+                <p class="hero__subtitle">IT Undergraduate at NIT Srinagar</p>
+                <p class="hero__description">Problems, Tech and everything in between. Currently pursuing my IT degree with interests in Deep Learning.</p>
+                <div class="hero__buttons">
+                    <a href="#about" class="btn btn--primary btn-glow">Learn More</a>
+                    <a href="#" class="btn btn--outline resume-btn">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about__content">
+                <div class="about__text">
+                    <p>Pursuing my IT degree with interests in Deep Learning and emerging technologies. I enjoy solving problems and building innovative solutions.</p>
+                </div>
+                <div class="skills">
+                    <h3 class="skills__title">Skills</h3>
+                    <div class="skills__grid">
+                        <div class="skill-item">
+                            <div class="skill-item__icon">
+                                <i data-feather="database"></i>
+                            </div>
+                            <span class="skill-item__text">Data Structures and Algorithms</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item__icon">
+                                <i data-feather="cpu"></i>
+                            </div>
+                            <span class="skill-item__text">Deep Learning</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-item__icon">
+                                <i data-feather="globe"></i>
+                            </div>
+                            <span class="skill-item__text">Web Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects__grid">
+                <div class="project-card">
+                    <div class="project-card__content">
+                        <div class="project-card__header">
+                            <h3 class="project-card__title">Coming Soon</h3>
+                            <div class="project-card__status">In Development</div>
+                        </div>
+                        <p class="project-card__description">Exciting project in development. Stay tuned for updates!</p>
+                        <div class="project-card__tech">
+                            <span class="tech-tag">TBD</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="#" class="project-link project-link--disabled">
+                                <i data-feather="eye"></i>
+                                View Project
+                            </a>
+                            <a href="#" class="project-link project-link--disabled">
+                                <i data-feather="github"></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-card__overlay"></div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card__content">
+                        <div class="project-card__header">
+                            <h3 class="project-card__title">Coming Soon</h3>
+                            <div class="project-card__status">Planned</div>
+                        </div>
+                        <p class="project-card__description">Another amazing project in the pipeline. Big things ahead!</p>
+                        <div class="project-card__tech">
+                            <span class="tech-tag">TBD</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="#" class="project-link project-link--disabled">
+                                <i data-feather="eye"></i>
+                                View Project
+                            </a>
+                            <a href="#" class="project-link project-link--disabled">
+                                <i data-feather="github"></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-card__overlay"></div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card__content">
+                        <div class="project-card__header">
+                            <h3 class="project-card__title">Coming Soon</h3>
+                            <div class="project-card__status">Ideation</div>
+                        </div>
+                        <p class="project-card__description">Future project showcase. Innovation in progress!</p>
+                        <div class="project-card__tech">
+                            <span class="tech-tag">TBD</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="#" class="project-link project-link--disabled">
+                                <i data-feather="eye"></i>
+                                View Project
+                            </a>
+                            <a href="#" class="project-link project-link--disabled">
+                                <i data-feather="github"></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-card__overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact__content">
+                <p class="contact__description">Let's connect and explore opportunities together!</p>
+                <div class="social-links">
+                    <a href="mailto:2023nitsgr234@nitsri.ac.in" class="social-link" target="_blank">
+                        <div class="social-link__icon">
+                            <i data-feather="mail"></i>
+                        </div>
+                        <span class="social-link__text">Email</span>
+                    </a>
+                    <a href="https://linkedin.com/in/sameer-rehman-b87a27281" class="social-link" target="_blank">
+                        <div class="social-link__icon">
+                            <i data-feather="linkedin"></i>
+                        </div>
+                        <span class="social-link__text">LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/SamBro481" class="social-link" target="_blank">
+                        <div class="social-link__icon">
+                            <i data-feather="github"></i>
+                        </div>
+                        <span class="social-link__text">GitHub</span>
+                    </a>
+                    <a href="https://www.instagram.com/_sam.red/" class="social-link" target="_blank">
+                        <div class="social-link__icon">
+                            <i data-feather="instagram"></i>
+                        </div>
+                        <span class="social-link__text">Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>

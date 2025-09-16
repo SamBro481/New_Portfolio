@@ -620,7 +620,7 @@ function initResumeDownload() {
 function downloadResume() {
     try {
         // Direct link to your PDF stored in the same folder
-        const pdfPath = 'Sam-s_Resume.pdf';
+        const pdfPath = 'Sams_Resume.pdf';
         const link = document.createElement('a');
         link.href = pdfPath;
         link.download = 'Sams_Resume.pdf';

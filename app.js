@@ -623,7 +623,7 @@ function downloadResume() {
         const pdfPath = 'Sam-s_Resume.pdf';
         const link = document.createElement('a');
         link.href = pdfPath;
-        link.download = "Sam's_Resume.pdf";
+        link.download = 'Sams_Resume.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);

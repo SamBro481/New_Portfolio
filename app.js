@@ -619,59 +619,23 @@ function initResumeDownload() {
 // Function to handle the actual resume download
 function downloadResume() {
     try {
-        // Create a blob URL for the PDF file
-        // This simulates downloading the PDF file
-        const resumeContent = createDummyPDFContent();
-        
-        // Create download link
+        // Direct link to your PDF stored in the same folder
+        const pdfPath = 'Sam-s_Resume.pdf';
         const link = document.createElement('a');
-        link.href = resumeContent;
-        link.download = 'Sameer_Updated_CV.pdf';
-        
-        // Append to body, click, and remove
+        link.href = pdfPath;
+        link.download = "Sam's_Resume.pdf";
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-        
-        // Clean up the blob URL
-        setTimeout(() => {
-            URL.revokeObjectURL(resumeContent);
-        }, 1000);
-        
+        // Success notification as before
+        showThemeNotification('📄 Resume download started!');
     } catch (error) {
         console.error('Error downloading resume:', error);
         showThemeNotification('❌ Download failed. Please try again.');
     }
 }
 
-// Create a dummy PDF content for demonstration
-// In a real application, this would be replaced with the actual PDF file
-function createDummyPDFContent() {
-    // This creates a simple text file as a placeholder
-    // In production, you would serve the actual PDF file
-    const content = `
-Sameer Rehman - Resume
 
-Contact Information:
-Email: 2023nitsgr234@nitsri.ac.in
-Education: IT Undergraduate at NIT Srinagar
-
-Skills:
-- Data Structures and Algorithms
-- Deep Learning  
-- Web Development
-
-Description:
-Passionate about technology, problem-solving, and continuous learning. 
-Currently pursuing my IT degree with interests in software development 
-and emerging technologies.
-
-Note: This is a placeholder file. The actual resume PDF would be served here.
-    `;
-    
-    const blob = new Blob([content], { type: 'application/pdf' });
-    return URL.createObjectURL(blob);
-}
 
 // Add interactive hover effects
 function initInteractiveEffects() {
